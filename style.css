@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap');
+
+* {
+    box-sizing: inherit;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+    background-color: rgb(34, 34, 34);
+}
+
+body {
+    border: 10px solid rgb(34, 34, 34);
+    box-shadow:inset 0 0 30px rgba(0,0,0,.1);
+    border-radius: 2rem;
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    overflow: hidden;
+
+    background-color: rgb(248, 206, 236);
+    background-image: linear-gradient(315deg, #f8ceec 0%, #a88beb 74%);
+    
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.heading {
+    font-size: 15rem;
+    margin: 0;
+    margin-bottom: 3rem;
+    /* text-shadow: 0 0 7px rgba(148, 106, 136, .5); */
+    opacity: 1;
+    font-weight: 400;
+
+    color: rgb(34, 34, 34);
+}
+
+.todos-container {
+    padding: 1rem;
+    border-radius: .5rem;
+    margin: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.text {
+    border: none;
+    padding: 2rem;
+    margin: 1rem;
+    border-radius: .5rem;
+    opacity: .8;
+    width: 100%;
+    font-size: 2.5rem;
+    color: rgb(248, 206, 236);
+    box-shadow: 0 3px 6px rgba(0,0,0,.1);
+    background-color: rgb(34, 34, 34);
+}
+
+.text:hover {
+    opacity: 1;
+}
+
+.text:focus {
+    outline: 4px solid rgb(218,182,246);
+}
+
+.text::placeholder {
+    color: rgb(248, 206, 236);
+}
+
+.todo {
+    border: 2px solid rgb(34, 34, 34);
+    border-radius: .5rem;
+    padding: 1rem;
+    margin: .5rem;
+    font-size: 1.7rem;
+    color: rgb(34, 34, 34);
+    box-shadow: 0 3px 6px rgba(0,0,0,.1);
+}
+
+.todo.completed {
+    border: none;
+    background-color: rgb(240, 244, 241);
+    text-decoration: line-through;
+    color: rgb(73, 173, 106);
+    /* background-color: #f8ceec; */
+}
+
+.todo-container {
+    width: 100%;
+    position: relative;
+}
+
+.close {
+    position: absolute;
+    right: 2rem;
+    color: rgb(34, 34, 34);
+    top: 2rem;
+    font-size: 1.6rem;
+}
+
+.hidden {
+    display: none;
+}
